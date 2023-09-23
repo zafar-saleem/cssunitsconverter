@@ -1,0 +1,5 @@
+{
+  "name": "@/navigation",
+  "main": "index.ts",
+  "version": "1.0.0"
+}

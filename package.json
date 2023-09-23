@@ -1,0 +1,65 @@
+{
+  "name": "hut-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/**"
+  ],
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --watch",
+    "cypress": "cypress open",
+    "prettier": "prettier --write .",
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^6.0.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "18.7.23",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@types/styled-components": "^5.1.26",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "cypress": "^10.9.0",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "eslint-plugin-storybook": "^0.6.4",
+    "husky": "^8.0.1",
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2",
+    "next-transpile-modules": "^9.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.19",
+    "npm": "please-use-yarn"
+  }
+}
