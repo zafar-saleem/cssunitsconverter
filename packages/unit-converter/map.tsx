@@ -40,6 +40,13 @@ import { VWToVH } from "./components/vw/vwtovh";
 import { VWToPX } from "./components/vw/vwtopx";
 import { VWToPT } from "./components/vw/vwtopt";
 
+import { VHToREM } from "./components/vh/vhtorem";
+import { VHToEM } from "./components/vh/vhtoem";
+import { VHToPC } from "./components/vh/vhtopc";
+import { VHToVW } from "./components/vh/vhtovw";
+import { VHToPX } from "./components/vh/vhtopx";
+import { VHToPT } from "./components/vh/vhtopt";
+
 export const map: any = {
   tovw: ({ ...props }) => <PxToVW {...props} />,
   torem: ({ ...props }) => <PxToREM {...props} />,
@@ -82,4 +89,11 @@ export const map: any = {
   vwtovh: ({ ...props }) => <VWToVH {...props} />,
   vwtopx: ({ ...props }) => <VWToPX {...props} />,
   vwtopt: ({ ...props }) => <VWToPT {...props} />,
+
+  vhtorem: ({ ...props }) => <VHToREM {...props} />,
+  vhtoem: ({ ...props }) => <VHToEM {...props} />,
+  vhtopc: ({ ...props }) => <VHToPC {...props} />,
+  vhtovw: ({ ...props }) => <VHToVW {...props} />,
+  vhtopx: ({ ...props }) => <VHToPX {...props} />,
+  vhtopt: ({ ...props }) => <VHToPT {...props} />,
 };
