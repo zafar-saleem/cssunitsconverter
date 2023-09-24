@@ -18,35 +18,35 @@ import { Title } from "@utils/title";
 
 const Items = [
   {
-    label: "px to rem",
-    path: "/css-units-converter/css-px-converter/css-px-to-rem-converter",
+    label: "vw to rem",
+    path: "/css-units-converter/css-vw-converter/css-vw-to-rem-converter",
   },
   {
-    label: "px to em",
-    path: "/css-units-converter/css-px-converter/css-px-to-em-converter",
+    label: "vw to em",
+    path: "/css-units-converter/css-vw-converter/css-vw-to-em-converter",
   },
   {
-    label: "px to vw",
-    path: "/css-units-converter/css-px-converter/css-px-to-vw-converter",
+    label: "vw to pt",
+    path: "/css-units-converter/css-vw-converter/css-vw-to-pt-converter",
   },
   {
-    label: "px to vh",
-    path: "/css-units-converter/css-px-converter/css-px-to-vh-converter",
+    label: "vw to vh",
+    path: "/css-units-converter/css-vw-converter/css-vw-to-vh-converter",
   },
   {
-    label: "px to pt",
-    path: "/css-units-converter/css-px-converter/css-px-to-pt-converter",
+    label: "vw to px",
+    path: "/css-units-converter/css-vw-converter/css-vw-to-px-converter",
   },
   {
-    label: "px to pc",
-    path: "/css-units-converter/css-px-converter/css-px-to-pc-converter",
+    label: "vw to pc",
+    path: "/css-units-converter/css-vw-converter/css-vw-to-pc-converter",
   },
 ];
 
 const CSSPXConverter: NextPage = () => {
   return (
-    <PrimaryLayout pageTitle="CSS Pixel Converter">
-      <Title variant="h2">CSS px converter</Title>
+    <PrimaryLayout pageTitle="CSS vw Converter">
+      <Title variant="h2">CSS vw converter</Title>
       <Grid>
         {
           Items.map((item: any, index: number) => (

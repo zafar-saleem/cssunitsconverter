@@ -33,6 +33,13 @@ import { PCToVH } from "./components/pc/pctovh";
 import { PCToPX } from "./components/pc/pctopx";
 import { PCToPT } from "./components/pc/pctopt";
 
+import { VWToREM } from "./components/vw/vwtorem";
+import { VWToEM } from "./components/vw/vwtoem";
+import { VWToPC } from "./components/vw/vwtopc";
+import { VWToVH } from "./components/vw/vwtovh";
+import { VWToPX } from "./components/vw/vwtopx";
+import { VWToPT } from "./components/vw/vwtopt";
+
 export const map: any = {
   tovw: ({ ...props }) => <PxToVW {...props} />,
   torem: ({ ...props }) => <PxToREM {...props} />,
@@ -68,4 +75,11 @@ export const map: any = {
   pctovh: ({ ...props }) => <PCToVH {...props} />,
   pctopx: ({ ...props }) => <PCToPX {...props} />,
   pctopt: ({ ...props }) => <PCToPT {...props} />,
+
+  vwtorem: ({ ...props }) => <VWToREM {...props} />,
+  vwtoem: ({ ...props }) => <VWToEM {...props} />,
+  vwtopc: ({ ...props }) => <VWToPC {...props} />,
+  vwtovh: ({ ...props }) => <VWToVH {...props} />,
+  vwtopx: ({ ...props }) => <VWToPX {...props} />,
+  vwtopt: ({ ...props }) => <VWToPT {...props} />,
 };
