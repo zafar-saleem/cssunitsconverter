@@ -43,20 +43,20 @@ const Items = [
     path: "/css-units-converter/css-em-converter",
   },
   {
-    label: "vw to all other units",
-    path: "/css-units-converter/css-vw-converter",
-  },
-  {
-    label: "vh to all other units",
-    path: "/css-units-converter/css-vh-converter",
-  },
-  {
     label: "pt to all other units",
     path: "/css-units-converter/css-pt-converter",
   },
   {
     label: "pc to all other units",
     path: "/css-units-converter/css-pc-converter",
+  },
+  {
+    label: "vw to all other units",
+    path: "/css-units-converter/css-vw-converter",
+  },
+  {
+    label: "vh to all other units",
+    path: "/css-units-converter/css-vh-converter",
   },
 ];
 

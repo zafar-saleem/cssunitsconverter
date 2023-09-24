@@ -4,18 +4,27 @@ import { PxToEM } from "./components/px/toem";
 import { PxToVH } from "./components/px/tovh";
 import { PxToPT } from "./components/px/topt";
 import { PxToPC } from "./components/px/topc";
+
 import { RemToEm } from "./components/rem/remtoem";
 import { RemToPC } from "./components/rem/remtopc";
 import { RemToPT } from "./components/rem/remtopt";
 import { RemToPX } from "./components/rem/remtopx";
 import { RemToVH } from "./components/rem/remtovh";
 import { RemToVW } from "./components/rem/remtovw";
+
 import { EMToPX } from "./components/em/emtopx";
 import { EMToPC } from "./components/em/emtopc";
 import { EMToVH } from "./components/em/emtovh";
 import { EMToVW } from "./components/em/emtovw";
 import { EMToREM } from "./components/em/emtorem";
 import { EMToPT } from "./components/em/emtopt";
+
+import { PTToREM } from "./components/pt/pttorem";
+import { PTToEM } from "./components/pt/pttoem";
+import { PTToVW } from "./components/pt/pttovw";
+import { PTToVH } from "./components/pt/pttovh";
+import { PTToPX } from "./components/pt/pttopx";
+import { PTToPC } from "./components/pt/pttopc";
 
 export const map: any = {
   tovw: ({ ...props }) => <PxToVW {...props} />,
@@ -38,4 +47,11 @@ export const map: any = {
   emtopt: ({ ...props }) => <EMToPT {...props} />,
   emtovh: ({ ...props }) => <EMToVH {...props} />,
   emtovw: ({ ...props }) => <EMToVW {...props} />,
+
+  pttorem: ({ ...props }) => <PTToREM {...props} />,
+  pttoem: ({ ...props }) => <PTToEM {...props} />,
+  pttovw: ({ ...props }) => <PTToVW {...props} />,
+  pttovh: ({ ...props }) => <PTToVH {...props} />,
+  pttopx: ({ ...props }) => <PTToPX {...props} />,
+  pttopc: ({ ...props }) => <PTToPC {...props} />,
 };

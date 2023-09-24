@@ -3,8 +3,6 @@ import {Title} from "@utils/title";
 import React from "react";
 import { Props } from "./interface";
 import { map } from "./map";
-import Link from "next/link";
-import { useRouter } from "next/router";
 
 const converters = [
   "/css-units-converter/css-px-converter/css-px-to-rem-converter",
