@@ -17,7 +17,7 @@ import { UnitConverter } from "@/unit-converter";
 const CSSPXToEM: NextPage = () => {
   return (
     <PrimaryLayout pageTitle="CSS Pixel to em converter">
-      <UnitConverter title="CSS Pixel to em converter" type="toem" />
+      <UnitConverter title="px to em converter" type="toem" />
     </PrimaryLayout>
   );
 };
