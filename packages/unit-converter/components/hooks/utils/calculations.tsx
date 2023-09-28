@@ -90,3 +90,34 @@ export const emtopc = ({ pxValue }: IProps): number | undefined => {
   if (!pxValue) return;
   return pxValue * 0.4167;
 }
+
+// pt conveters
+export const pttorem = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue / 16;
+}
+
+export const pttoem = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue / 16;
+}
+
+export const pttovh = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return ((12 * 1.33) / pxValue) * 100;
+}
+
+export const pttovw = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return ((12 * 1.33) / pxValue) * 100;
+}
+
+export const pttopx = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue * 4/3;
+}
+
+export const pttopc = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue / 12;
+}

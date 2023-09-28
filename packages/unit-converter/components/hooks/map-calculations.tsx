@@ -19,4 +19,10 @@ export const mapCalculation: any = {
   emtovh: converters.emtovh,
   emtopt: converters.emtopt,
   emtopc: converters.emtopc,
+  pttorem: converters.pttorem,
+  pttoem: converters.pttoem,
+  pttovw: converters.pttovw,
+  pttovh: converters.pttovh,
+  pttopx: converters.pttopx,
+  pttopc: converters.pttopc,
 }
