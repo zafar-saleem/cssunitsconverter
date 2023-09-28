@@ -23,9 +23,10 @@ export const Field = styled.input<Props>`
 `;
 
 export const Label = styled.label`
-  position: absolute;
+  // position: absolute;
   right: ${props => props.theme.tokens.gutter.gutter100};
   color: ${props => props.theme.tokens.colors.branding.brand400};
   padding: 26px 0;
   z-index: 1;
+  font-size: 0.9rem;
 `;
