@@ -35,4 +35,11 @@ export const mapCalculation: any = {
   pctovh: converters.pctovh,
   pctopx: converters.pctopx,
   pctopt: converters.pctopt,
+
+  vwtorem: converters.vwtorem,
+  vwtoem: converters.vwtoem,
+  vwtovh: converters.vwtovh,
+  vwtopx: converters.vwtopx,
+  vwtopt: converters.vwtopt,
+  vwtopc: converters.vwtopc,
 }

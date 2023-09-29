@@ -3,28 +3,24 @@ import Flex from "@utils/flex"
 import Separator from "@utils/separator"
 import React from "react";
 import { Calculate } from "@/calculate-btn";
-import * as Styled from "../../styled/components.styled";
+import { useConverter } from "../../hooks/useConverter";
 
 export const VWToPC = ({ ...props }) => {
-  const [userFirstValue, updateUserFirstValue] = React.useState<number>(0);
-  const [userSecondValue, updateUserSecondValue] = React.useState<number>(0);
-  const [result, updateResult] = React.useState<number>();
-
-  const calculate = React.useCallback(() => {
-    // if (userFirstValue && userSecondValue) {
-    //   const total = (userFirstValue / userSecondValue) * 100;
-    //   updateResult(total);
-    // }
-  }, [userFirstValue, userSecondValue]);
+  const { 
+    updateUserFirstValue,
+    updateUserSecondValue,
+    result,
+    calculate,
+  } = useConverter("vwtopc");
   
   return (
     <>
       <Flex direction="row">
         <Input name="pixels" label="vw" {...props} updateParentState={updateUserFirstValue} />
-        <Styled.Label>out of</Styled.Label>
-        <Input name="vw" label="vw" {...props} updateParentState={updateUserSecondValue} />
+        {/* <Styled.Label>out of</Styled.Label> */}
+        <Input name="vw" label="pc (viewport width in picas)" {...props} updateParentState={updateUserSecondValue} />
         <Separator>⤳</Separator>
-        <Input name="em" label="vw" lock value={result} />
+        <Input name="em" label="pc (based on font size of 12pt & a character width of 1 pica)" lock value={result} />
       </Flex>
       <Calculate parentAction={calculate}>Calculate</Calculate>
     </>

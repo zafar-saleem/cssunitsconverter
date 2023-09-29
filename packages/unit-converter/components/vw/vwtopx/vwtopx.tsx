@@ -3,24 +3,23 @@ import Flex from "@utils/flex"
 import Separator from "@utils/separator"
 import React from "react";
 import { Calculate } from "@/calculate-btn";
-// import * as Styled from "../styled/components.styled";
+import { useConverter } from "../../hooks/useConverter";
+import * as Styled from "../../styled/components.styled";
 
 export const VWToPX = ({ ...props }) => {
-  const [userFirstValue, updateUserFirstValue] = React.useState<number>(0);
-  // const [userSecondValue, updateUserSecondValue] = React.useState<number>(0);
-  const [result, updateResult] = React.useState<number>();
-  // pt = px * ( 72pt / 96 )
-  const calculate = () => {
-    // if (userFirstValue) {
-    //   const total = (userFirstValue) * (72 / 96);
-    //   updateResult(total);
-    // }
-  };
+  const { 
+    updateUserFirstValue,
+    updateUserSecondValue,
+    result,
+    calculate,
+  } = useConverter("vwtopx");
   
   return (
     <>
       <Flex direction="row">
         <Input name="pixels" label="vw" {...props} updateParentState={updateUserFirstValue} />
+        {/* <Styled.Label>out of</Styled.Label> */}
+        <Input name="vw" label="px (your viewport width in pixels)" {...props} updateParentState={updateUserSecondValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="px" lock value={result} />
       </Flex>

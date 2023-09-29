@@ -152,3 +152,34 @@ export const pctopt = ({ pxValue }: IProps): number | undefined => {
   if (!pxValue) return;
   return pxValue * 12;
 }
+
+// vw conversions
+export const vwtorem = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return (pxValue * 16) / 100;
+}
+
+export const vwtoem = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue / 16;
+}
+
+export const vwtovh = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return (pxValue * 100) / 100;
+}
+
+export const vwtopc = ({ pxValue, pxTotalValue = 0 }: IProps): number | undefined => {
+  if (!pxValue && !pxTotalValue) return;
+  return (pxValue * pxTotalValue) / 100;
+}
+
+export const vwtopx = ({ pxValue, pxTotalValue = 0 }: IProps): number | undefined => {
+  if (!pxValue && !pxTotalValue) return;
+  return (pxValue * pxTotalValue) / 100;
+}
+
+export const vwtopt = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return (pxValue * 16) / (100 * 12);
+}
