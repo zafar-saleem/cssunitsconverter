@@ -8,8 +8,8 @@ import * as Styled from "../../styled/components.styled";
 
 export const VWToPX = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
-    updateUserSecondValue,
+    updateValue,
+    updateAssumedValue,
     result,
     calculate,
   } = useConverter("vwtopx");
@@ -17,9 +17,9 @@ export const VWToPX = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="vw" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="vw" {...props} updateParentState={updateValue} />
         {/* <Styled.Label>out of</Styled.Label> */}
-        <Input name="vw" label="px (your viewport width in pixels)" {...props} updateParentState={updateUserSecondValue} />
+        <Input name="vw" label="px (your viewport width in pixels)" {...props} updateParentState={updateAssumedValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="px" lock value={result} />
       </Flex>

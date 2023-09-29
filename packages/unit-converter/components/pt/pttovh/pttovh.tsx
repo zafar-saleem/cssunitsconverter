@@ -7,7 +7,7 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const PTToVH = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
+    updateValue,
     result,
     calculate,
   } = useConverter("pttovh");
@@ -15,9 +15,9 @@ export const PTToVH = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="pt" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="pt" {...props} updateParentState={updateValue} />
         {/* <Styled.Label>out of</Styled.Label> */}
-        {/* <Input name="vw" label="view port height in px" {...props} updateParentState={updateUserSecondValue} /> */}
+        {/* <Input name="vw" label="view port height in px" {...props} updateParentState={updateAssumedValue} /> */}
         <Separator>⤳</Separator>
         {/* @ts-ignore */}
         <Input name="em" label="vh" lock value={result} />

@@ -7,7 +7,7 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const VWToVH = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
+    updateValue,
     result,
     calculate,
   } = useConverter("vwtovh");
@@ -15,9 +15,9 @@ export const VWToVH = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="vw" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="vw" {...props} updateParentState={updateValue} />
         {/* <Styled.Label>out of</Styled.Label> */}
-        {/* <Input name="vw" label="vw" {...props} updateParentState={updateUserSecondValue} /> */}
+        {/* <Input name="vw" label="vw" {...props} updateParentState={updateAssumedValue} /> */}
         <Separator>⤳</Separator>
         <Input name="em" label="vh" lock value={result} />
       </Flex>

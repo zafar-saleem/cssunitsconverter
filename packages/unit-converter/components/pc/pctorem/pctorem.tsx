@@ -7,7 +7,7 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const PCToREM = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
+    updateValue,
     result,
     calculate,
   } = useConverter("pctorem");
@@ -15,7 +15,7 @@ export const PCToREM = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="pc" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="pc" {...props} updateParentState={updateValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="rem" lock value={result} />
       </Flex>

@@ -7,7 +7,7 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const VWToREM = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
+    updateValue,
     result,
     calculate,
   } = useConverter("vwtorem");
@@ -15,7 +15,7 @@ export const VWToREM = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="vw" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="vw" {...props} updateParentState={updateValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="rem (based on font size 16px)" lock value={result} />
       </Flex>

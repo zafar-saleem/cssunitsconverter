@@ -46,7 +46,7 @@ const Items = [
 const CSSPXConverter: NextPage = () => {
   return (
     <PrimaryLayout pageTitle="CSS vw Converter">
-      <Title variant="h2">CSS vw converter</Title>
+      <Title variant="h2">CSS vh converter</Title>
       <Grid>
         {
           Items.map((item: any, index: number) => (

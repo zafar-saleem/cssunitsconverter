@@ -8,8 +8,8 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const PxToVH = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
-    updateUserSecondValue,
+    updateValue,
+    updateAssumedValue,
     result,
     calculate,
   } = useConverter("pxtovh");
@@ -17,9 +17,9 @@ export const PxToVH = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="px" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="px" {...props} updateParentState={updateValue} />
         <Styled.Label>out of</Styled.Label>
-        <Input name="vw" label="px" {...props} updateParentState={updateUserSecondValue} />
+        <Input name="vw" label="px" {...props} updateParentState={updateAssumedValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="vh" lock value={result} />
       </Flex>

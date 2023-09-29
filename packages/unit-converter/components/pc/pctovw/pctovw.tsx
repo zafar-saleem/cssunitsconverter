@@ -7,7 +7,7 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const PCToVW = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
+    updateValue,
     result,
     calculate,
   } = useConverter("pctovw");
@@ -15,9 +15,9 @@ export const PCToVW = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="pc" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="pc" {...props} updateParentState={updateValue} />
         {/* <Styled.Label>out of</Styled.Label> */}
-        {/* <Input name="vw" label="pc that represent % of the viewport width" {...props} updateParentState={updateUserSecondValue} /> */}
+        {/* <Input name="vw" label="pc that represent % of the viewport width" {...props} updateParentState={updateAssumedValue} /> */}
         <Separator>⤳</Separator>
         <Input name="em" label="vw (based on 1pc represent 1% of view port width)" lock value={result} />
       </Flex>

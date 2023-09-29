@@ -7,7 +7,7 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const VWToPT = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
+    updateValue,
     result,
     calculate,
   } = useConverter("vwtopt");
@@ -15,7 +15,7 @@ export const VWToPT = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="vw" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="vw" {...props} updateParentState={updateValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="pt (based on font size 16px & 1 character at 16px font size corresponds to 12pt)" lock value={result} />
       </Flex>

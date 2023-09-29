@@ -7,8 +7,8 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const VWToPC = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
-    updateUserSecondValue,
+    updateValue,
+    updateAssumedValue,
     result,
     calculate,
   } = useConverter("vwtopc");
@@ -16,9 +16,9 @@ export const VWToPC = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="vw" {...props} updateParentState={updateUserFirstValue} />
+        <Input name="pixels" label="vw" {...props} updateParentState={updateValue} />
         {/* <Styled.Label>out of</Styled.Label> */}
-        <Input name="vw" label="pc (viewport width in picas)" {...props} updateParentState={updateUserSecondValue} />
+        <Input name="vw" label="pc (viewport width in picas)" {...props} updateParentState={updateAssumedValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="pc (based on font size of 12pt & a character width of 1 pica)" lock value={result} />
       </Flex>

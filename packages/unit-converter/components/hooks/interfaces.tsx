@@ -1,4 +1,4 @@
 export interface IProps {
-  pxValue: number;
-  pxTotalValue?: number;
+  value: number;
+  assumedValue?: number;
 }

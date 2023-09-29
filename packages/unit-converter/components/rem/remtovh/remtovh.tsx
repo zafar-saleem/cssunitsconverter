@@ -7,8 +7,8 @@ import { useConverter } from "../../hooks/useConverter";
 
 export const RemToVH = ({ ...props }) => {
   const { 
-    updateUserFirstValue,
-    updateUserSecondValue,
+    updateValue,
+    updateAssumedValue,
     result,
     calculate,
   } = useConverter("remtovh");
@@ -16,8 +16,8 @@ export const RemToVH = ({ ...props }) => {
   return (
     <>
       <Flex direction="row">
-        <Input name="pixels" label="rem" {...props} updateParentState={updateUserFirstValue} />
-        <Input name="px" label="size in px" {...props} updateParentState={updateUserSecondValue} />
+        <Input name="pixels" label="rem" {...props} updateParentState={updateValue} />
+        <Input name="px" label="size in px" {...props} updateParentState={updateAssumedValue} />
         <Separator>⤳</Separator>
         <Input name="em" label="vh" lock value={result} />
       </Flex>
