@@ -10,7 +10,7 @@ export const useConverter = (type: any) => {
     updateResult(mapCalculation[type]({
       pxValue: userFirstValue,
       pxTotalValue: userSecondValue,
-    }));
+    }).toFixed(2));
   }, [userFirstValue, userSecondValue]);
 
   return {

@@ -121,3 +121,34 @@ export const pttopc = ({ pxValue }: IProps): number | undefined => {
   if (!pxValue) return;
   return pxValue / 12;
 }
+
+// pc converters
+export const pctorem = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue / 6;
+}
+
+export const pctoem = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue / 6;
+}
+
+export const pctovw = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue * 1;
+}
+
+export const pctovh = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue * 1;
+}
+
+export const pctopx = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue * 16;
+}
+
+export const pctopt = ({ pxValue }: IProps): number | undefined => {
+  if (!pxValue) return;
+  return pxValue * 12;
+}

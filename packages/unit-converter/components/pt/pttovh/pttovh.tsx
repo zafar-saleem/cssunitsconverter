@@ -20,7 +20,7 @@ export const PTToVH = ({ ...props }) => {
         {/* <Input name="vw" label="view port height in px" {...props} updateParentState={updateUserSecondValue} /> */}
         <Separator>⤳</Separator>
         {/* @ts-ignore */}
-        <Input name="em" label="vh" lock value={result?.toFixed(4).toString()} />
+        <Input name="em" label="vh" lock value={result} />
       </Flex>
       <Calculate parentAction={calculate}>Calculate</Calculate>
     </>
