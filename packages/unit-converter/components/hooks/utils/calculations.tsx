@@ -21,12 +21,12 @@ export const pxtovh = ({ value, assumedValue }: IProps): number | undefined => {
 }
 
 export const pxtopt = ({ value, assumedValue }: IProps): number | undefined => {
-  if (!value || !assumedValue) return;
+  // if (!value || !assumedValue) return;
   return (value) * (72 / 96);
 }
 
 export const pxtopc = ({ value, assumedValue }: IProps): number | undefined => {
-  if (!value || !assumedValue) return;
+  // if (!value || !assumedValue) return;
   return value * 0.0625;
 }
 

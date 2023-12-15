@@ -10,7 +10,7 @@ export const PxToPT = ({ ...props }) => {
     updateValue,
     result,
     calculate,
-  } = useConverter("pxtovw");
+  } = useConverter("pxtopt");
   
   return (
     <>

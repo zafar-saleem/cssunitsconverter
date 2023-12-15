@@ -6,7 +6,7 @@ export const mapCalculation: any = {
   pxtovw: converters.pxtovw,
   pxtovh: converters.pxtovh,
   pxtopt: converters.pxtopt,
-  pxtopc: converters.pxtopt,
+  pxtopc: converters.pxtopc,
   
   remtopx: converters.remtopx,
   remtoem: converters.remtoem,

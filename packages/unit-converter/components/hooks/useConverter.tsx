@@ -7,6 +7,7 @@ export const useConverter = (type: any) => {
   const [result, updateResult] = React.useState<number>();
 
   const calculate = React.useCallback(() => {
+    console.log(type);
     updateResult(mapCalculation[type]({
       value,
       assumedValue,
