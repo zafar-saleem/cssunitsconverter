@@ -14,14 +14,14 @@ export const mapCalculation: any = {
   remtopt: converters.remtopt,
   remtovh: converters.remtovh,
   remtovw: converters.remtovw,
-  
+
   emtopx: converters.emtopx,
   emtorem: converters.emtorem,
   emtovw: converters.emtovw,
   emtovh: converters.emtovh,
   emtopt: converters.emtopt,
   emtopc: converters.emtopc,
-  
+
   pttorem: converters.pttorem,
   pttoem: converters.pttoem,
   pttovw: converters.pttovw,

@@ -11,15 +11,15 @@ export const EMToPC = ({ ...props }) => {
     result,
     calculate,
   } = useConverter("emtopc");
-  // const [value, updateValue] = React.useState<number>(0);
+  // const [userFirstValue, updateUserFirstValue] = React.useState<number>(0);
   // const [result, updateResult] = React.useState<number>();
 
   // const calculate = React.useCallback(() => {
-  //   if (value) {
-  //     // const total = value * 0.4167;
+  //   if (userFirstValue) {
+  //     // const total = userFirstValue * 0.4167;
   //     // updateResult(total);
   //   }
-  // }, [value]);
+  // }, [userFirstValue]);
   
   return (
     <>
