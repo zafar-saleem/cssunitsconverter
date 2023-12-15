@@ -4,6 +4,7 @@ import { PrimaryLayout } from "@/primary-layout";
 import Grid from "@utils/grid";
 import Button from "@/button";
 import { Title } from "@utils/title";
+import { Center } from "../../../packages/utils/center";
 
 // const SEO_CONTENTS = [
 //   {
@@ -46,14 +47,16 @@ const Items = [
 const CSSEMConverter: NextPage = () => {
   return (
     <PrimaryLayout pageTitle="CSS em Converter">
-      <Title variant="h2">CSS em converter</Title>
-      <Grid>
-        {
-          Items.map((item: any, index: number) => (
-            <Button key={index} href={item.path}>{item.label}</Button>
-          ))
-        }
-      </Grid>
+      <Center>
+        <h2>CSS em converter</h2>
+        <Grid>
+          {
+            Items.map((item: any, index: number) => (
+              <Button key={index} href={item.path}>{item.label}</Button>
+            ))
+          }
+        </Grid>
+      </Center>
     </PrimaryLayout>
   );
 };

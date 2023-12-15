@@ -6,6 +6,7 @@ export const Middle = styled.div<Props>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: ${props => props.theme.breakpoints.l};
+  margin: auto;
   height: ${props => props.height || `100vh`};
 `;

@@ -4,14 +4,14 @@ import React from "react";
 import { Props } from "./interface";
 import { map } from "./map";
 
-const converters = [
-  "/css-units-converter/css-px-converter/css-px-to-rem-converter",
-  "/css-units-converter/css-px-converter/css-px-to-em-converter",
-  "/css-units-converter/css-px-converter/css-px-to-pc-converter",
-  "/css-units-converter/css-px-converter/css-px-to-pt-converter",
-  "/css-units-converter/css-px-converter/css-px-to-vw-converter",
-  "/css-units-converter/css-px-converter/css-px-to-vh-converter",
-];
+// const converters = [
+//   "/css-units-converter/css-px-converter/css-px-to-rem-converter",
+//   "/css-units-converter/css-px-converter/css-px-to-em-converter",
+//   "/css-units-converter/css-px-converter/css-px-to-pc-converter",
+//   "/css-units-converter/css-px-converter/css-px-to-pt-converter",
+//   "/css-units-converter/css-px-converter/css-px-to-vw-converter",
+//   "/css-units-converter/css-px-converter/css-px-to-vh-converter",
+// ];
 
 export const UnitConverter = ({ type, ...props }: Props) => {
   // const [randomLink, updateRandomLink] = React.useState('');
@@ -33,7 +33,7 @@ export const UnitConverter = ({ type, ...props }: Props) => {
 
   return (
     <Middle height="80vh">
-      <Title variant="h2">{props?.title}</Title>
+      <h2>{props?.title}</h2>
       {map[type]({ ...props })}
       {/* <Link href={randomLink}>more css unit converters</Link> */}
     </Middle>

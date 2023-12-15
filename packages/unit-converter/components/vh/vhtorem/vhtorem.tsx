@@ -3,18 +3,14 @@ import Flex from "@utils/flex"
 import Separator from "@utils/separator"
 import React from "react";
 import { Calculate } from "@/calculate-btn";
+import { useConverter } from "../../hooks/useConverter";
 
 export const VHToREM = ({ ...props }) => {
-  const [value, updateValue] = React.useState<number>(0);
-  // const [assumedValue, updateAssumedValue] = React.useState<number>(0);
-  const [result, updateResult] = React.useState<number>();
-
-  const calculate = React.useCallback(() => {
-    // if (value) {
-    //   const total = (value / 16);
-    //   updateResult(total);
-    // }
-  }, [value]);
+  const { 
+    updateValue,
+    result,
+    calculate,
+  } = useConverter("vhtorem");
   
   return (
     <>

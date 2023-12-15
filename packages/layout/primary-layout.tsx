@@ -2,7 +2,7 @@ import Head from "next/head";
 import * as Styled from "./primary-layout.styled";
 import Link from "next/link";
 import {Title} from "@utils/title";
-import { Footer } from "@/footer";
+// import { Footer } from "@/footer";
 
 export interface IMeta {
   "name": string;
@@ -31,10 +31,12 @@ export const PrimaryLayout: React.FC<IPrimaryLayout> = ({ meta, pageTitle, child
           ))
         }
       </Head>
-      <Styled.Main>
-        <Title>
-          <Link href="/">CSS Units Converter</Link>
+      <header>
+        <Title logo>
+          <Link href="/">CSS Unit Converters</Link>
         </Title>
+      </header>
+      <Styled.Main>
         {children}
       </Styled.Main>
       {/* <Footer /> */}

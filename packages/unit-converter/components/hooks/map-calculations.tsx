@@ -42,4 +42,11 @@ export const mapCalculation: any = {
   vwtopx: converters.vwtopx,
   vwtopt: converters.vwtopt,
   vwtopc: converters.vwtopc,
+
+  vhtorem: converters.vhtorem,
+  vhtoem: converters.vhtoem,
+  vhtopc: converters.vhtopc,
+  vhtopt: converters.vhtopt,
+  vhtopx: converters.vhtopx,
+  vhtovw: converters.vhtovw,
 }

@@ -3,6 +3,7 @@ import React from "react";
 import { PrimaryLayout } from "@/primary-layout";
 import Grid from "@utils/grid";
 import Button from "@/button";
+import { Center } from "../packages/utils/center";
 
 const meta = {
   "parent": {
@@ -54,22 +55,24 @@ const Items = [
     label: "vw to all other units",
     path: "/css-units-converter/css-vw-converter",
   },
-  {
-    label: "vh to all other units",
-    path: "/css-units-converter/css-vh-converter",
-  },
+  // {
+  //   label: "vh to all other units",
+  //   path: "/css-units-converter/css-vh-converter",
+  // },
 ];
 
 const Home: NextPage = () => {
   return (
     <PrimaryLayout pageTitle="CSS Units Converter" meta={meta}>
-      <Grid>
-        {
-          Items.map((item: any, index: number) => (
-            <Button key={index} href={item.path}>{item.label}</Button>
-          ))
-        }
-      </Grid>
+      <Center>
+        <Grid>
+          {
+            Items.map((item: any, index: number) => (
+              <Button key={index} href={item.path}>{item.label}</Button>
+            ))
+          }
+        </Grid>
+      </Center>
     </PrimaryLayout>
   );
 };

@@ -183,3 +183,34 @@ export const vwtopt = ({ value }: IProps): number | undefined => {
   if (!value) return;
   return (value * 16) / (100 * 12);
 }
+// vh converter
+export const vhtorem = ({ value }: IProps): number | undefined => {
+  if (!value) return;
+  const val = 16 / 100;
+  return value / val;
+}
+
+export const vhtoem = ({ value }: IProps): number | undefined => {
+  if (!value) return;
+  return value / 16;
+}
+
+export const vhtovw = ({ value }: IProps): number | undefined => {
+  if (!value) return;
+  return (value * 16) / (100 * 12);
+}
+
+export const vhtopx = ({ value }: IProps): number | undefined => {
+  if (!value) return;
+  return (value * 16) / (100 * 12);
+}
+
+export const vhtopc = ({ value }: IProps): number | undefined => {
+  if (!value) return;
+  return (value * 16) / (100 * 12);
+}
+
+export const vhtopt = ({ value }: IProps): number | undefined => {
+  if (!value) return;
+  return (value * 16) / (100 * 12);
+}
